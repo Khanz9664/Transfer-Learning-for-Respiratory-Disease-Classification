@@ -18,6 +18,11 @@
   7. Performance Evaluation
   8. Comparative Analysis
 
+# INTERFACE
+![interface](src/app0.png)
+![interface](src/app1.png)
+![interface](src/app2.png)
+
 # RESULTS
 
 VGG 16
