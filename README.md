@@ -4,7 +4,7 @@
 # Objectives
  - To prepare a comprehensive dataset of chest X-ray images for classification.
  - To establish a baseline by training a Custom CNN from scratch.
- - To implement and fine-tune a VGG16 model using Transfer Learning (VGG16 & ViT B/16).
+ - To implement and fine-tune a VGG16 model using Transfer Learning.
  - To implement and fine-tune a Vision Transformer (ViT) model using Transfer Learning.
  - To conduct a rigorous comparative analysis of all three models on performance and efficiency.
 
