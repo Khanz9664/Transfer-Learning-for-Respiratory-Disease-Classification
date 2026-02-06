@@ -21,7 +21,7 @@ The study demonstrates the significant advantages of transfer learning in medica
 | **Custom CNN** | From Scratch | 80.0% | 0.80 | ~10 min |
 
 ### Key Insights:
-- **Transfer learning models achieved higher accuracy** while requiring **~60% less training time**
+- **Transfer learning models achieved higher accuracy** while requiring **~40% less training time**
 - **VGG16 outperformed ViT**, demonstrating the advantage of convolutional inductive bias for medical imaging
 - **Near-perfect COVID-19 detection** (F1-score: 0.99) across both transfer learning models
 - **Differentiating bacterial vs. viral pneumonia** remains challenging—reflecting real clinical difficulty
