@@ -18,7 +18,7 @@ The study demonstrates the significant advantages of transfer learning in medica
 |-------|------------------|----------|----------|---------------|
 | **VGG16** | Transfer Learning | **83.0%** | **0.84** | ~6.5 min |
 | **ViT** | Transfer Learning | 81.0% | 0.81 | ~6.2 min |
-| **Custom CNN** | From Scratch | 80.0% | 0.80 | 17 min |
+| **Custom CNN** | From Scratch | 80.0% | 0.80 | ~10 min |
 
 ### Key Insights:
 - **Transfer learning models achieved higher accuracy** while requiring **~60% less training time**
