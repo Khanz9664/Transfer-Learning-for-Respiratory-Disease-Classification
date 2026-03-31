@@ -155,16 +155,45 @@ graph LR
 We evaluate every heatmap across six independent dimensions with Bonferroni-corrected statistical testing (α = 0.05/6 ≈ 0.0083):
 
 ```mermaid
-radar
-    title Explainability Profile (normalized, higher = better)
-    options
-        max 1
-    "Visual Intuitiveness" : 0.9, 0.6
-    "Activation Contrast" : 0.45, 0.85
-    "Spatial Selectivity" : 0.80, 0.45
-    "Perturbation Robustness" : 0.35, 0.95
-    "Inter-Method Agreement" : 0.05, 0.75
-    "Causal Faithfulness (AOPC)" : 0.05, 0.80
+flowchart TB
+    classDef noBorder fill:none,stroke:none;
+
+    chart["<svg width='420' height='420' viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'>
+    
+    <!-- Grid -->
+    <polygon points='200,40 340,120 300,300 100,300 60,120' fill='none' stroke='#ccc'/>
+    <polygon points='200,80 310,140 280,280 120,280 90,140' fill='none' stroke='#ddd'/>
+    <polygon points='200,120 280,160 260,260 140,260 120,160' fill='none' stroke='#eee'/>
+
+    <!-- Axes -->
+    <line x1='200' y1='200' x2='200' y2='40' stroke='#aaa'/>
+    <line x1='200' y1='200' x2='340' y2='120' stroke='#aaa'/>
+    <line x1='200' y1='200' x2='300' y2='300' stroke='#aaa'/>
+    <line x1='200' y1='200' x2='100' y2='300' stroke='#aaa'/>
+    <line x1='200' y1='200' x2='60' y2='120' stroke='#aaa'/>
+
+    <!-- Method A -->
+    <polygon points='200,60 260,150 230,250 170,250 190,140'
+             fill='rgba(0,123,255,0.4)' stroke='#007bff' stroke-width='2'/>
+
+    <!-- Method B -->
+    <polygon points='200,100 320,140 280,280 140,280 100,140'
+             fill='rgba(255,99,132,0.4)' stroke='#ff6384' stroke-width='2'/>
+
+    <!-- Labels -->
+    <text x='200' y='25' text-anchor='middle' font-size='12'>Visual Intuitiveness</text>
+    <text x='350' y='120' font-size='12'>Activation Contrast</text>
+    <text x='310' y='320' font-size='12'>Spatial Selectivity</text>
+    <text x='60' y='320' font-size='12'>Perturbation Robustness</text>
+    <text x='20' y='120' font-size='12'>Inter-Method Agreement</text>
+
+    <!-- Legend -->
+    <rect x='260' y='10' width='12' height='12' fill='#007bff'/>
+    <text x='280' y='20' font-size='12'>Method A</text>
+    <rect x='260' y='30' width='12' height='12' fill='#ff6384'/>
+    <text x='280' y='40' font-size='12'>Method B</text>
+
+    </svg>"]:::noBorder
 ```
 
 | Metric | VGG16 | ViT-B/16 | Winner |
