@@ -154,7 +154,18 @@ graph LR
 
 We evaluate every heatmap across six independent dimensions with Bonferroni-corrected statistical testing (α = 0.05/6 ≈ 0.0083):
 
-<img src="screenshots/radar.svg" width="450">
+```mermaid
+radar
+    title Explainability Profile (normalized, higher = better)
+    options
+        max 1
+    "Visual Intuitiveness" : 0.9, 0.6
+    "Activation Contrast" : 0.45, 0.85
+    "Spatial Selectivity" : 0.80, 0.45
+    "Perturbation Robustness" : 0.35, 0.95
+    "Inter-Method Agreement" : 0.05, 0.75
+    "Causal Faithfulness (AOPC)" : 0.05, 0.80
+```
 
 | Metric | VGG16 | ViT-B/16 | Winner |
 |---|:---:|:---:|:---:|
